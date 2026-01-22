@@ -9,17 +9,17 @@
 <body>
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="reshma_img.jpeg" height="50" width="50">
+            <img src="reshma_img.jpeg" alt="Reshma Profile" height="50" width="50">
         </a>
         <div class="navbar">
-        <nav>
-            <ul>
-           <li> <a href="index.html" class="active">HOME</a></li>
-           <li> <a href="index1.html"> ABOUT</a></li>
-            <li><a href="index2.html">SKILLS</a></li>
-            <li><a href="index3.html">CONTACT US</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index1.html">ABOUT</a></li>
+                    <li><a href="index2.html">SKILLS</a></li>
+                    <li><a href="index3.html" class="active">CONTACT US</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -37,12 +37,12 @@
                 <p><strong>Location:</strong> India</p>
             </div>
 
-            <form class="contact-form">
+            <form class="contact-form" action="#" method="post">
                 <h2>Send a Message</h2>
 
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -51,7 +51,4 @@
     </section>
 
 </body>
-</html> 
-
-
-
+</html>

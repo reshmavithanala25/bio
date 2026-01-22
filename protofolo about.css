@@ -1,0 +1,134 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #4aa6bf;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #020617;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;   /* optional */
+}
+
+
+/* Logo */
+.logo h1 {
+    color: #38bdf8;
+    font-size: 28px;
+}
+
+/* Navbar */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Main Section */
+.main {
+    padding: 50px;
+}
+
+/* Sub Section 1 */
+.sub1 {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Image Box */
+.box1 img {
+    border-radius: 50%;
+    border: 4px solid #e032a6;
+}
+
+/* Intro Box */
+.box2 h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #d00880;
+}
+
+.box2 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Sub Section 2 */
+.sub2 {
+    display: flex;
+    gap: 40px;
+}
+
+/* Academic Achievements */
+.box3,
+.box4 {
+    background-color: #b7c2c5;
+    padding: 25px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box3 h1,
+.box4 h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #be2c83;
+}
+
+.box3 p,
+.box4 p {
+    font-size: 15px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .sub1,
+    .sub2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box3,
+    .box4 {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+} 
